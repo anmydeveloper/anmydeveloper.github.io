@@ -1,2 +1,0 @@
-# anmydeveloper.github.io
-hoteltesting
