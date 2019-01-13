@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+  .glow {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+/* Style the header */
+header {
+  background-color: yellow;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 6px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 200;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+div.gallery1 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 500px;
+}
+
+div.gallery1:hover {
+  border: 6px solid #777;
+}
+
+div.gallery1 img {
+  width: 350;
+  height: 300;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 20%;
+}
+
+.row1 > .column1 {
+  padding: 0 4px;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: white;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+</style>
+
+<title>MENU</title>
+</head>
+<body background="Webpage_background.jpg"width="1200"height="2000">
+
+<header style="background-color:lightgrey;text-align:center">
+  <h1 class="glow"style="font-family:Edwardian Script ITC;color:Red"><b>Royal Cuisine</b></h1>
+  <p style="font-size:6;color:black;font-family:blackadder itc">A Complete Hyderabadi Cuisine<p>
+</header>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" target="_parent">Home</a>
+  <a href="Menu.html"class="active"target="_parent">Menu</a>
+  <a href="Gallery.html"target="_parent">gallery</a>
+  <a href="Contact.html" target="_parent">Contact</a>
+  <a href="About.html" target="_parent">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+<div style="background-color:blue">
+<h1 class="glow" style="color:White">Snacks</h1>
+</div>
+
+<div class="row">
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="Samosachutney.jpg">
+    <img src="Samosachutney.jpg" alt="Samosa" width="300" height="200">
+  </a>
+  <div class="desc">Samosa</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="eggpuff.jpg">
+    <img src="eggpuff.jpg" alt="Egg Puff" width="400" height="200">
+  </a>
+  <div class="desc">Egg Puff</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="vegpuff.jpg">
+    <img src="vegpuff.jpg" alt="Veg Puff" width="400" height="200">
+  </a>
+  <div class="desc">Veg Puff</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="chickenpuff1.jpg">
+    <img src="chickenpuff1.jpg" alt="Chicken puff" width="400" height="200"></a>
+  <div class="desc">Chicken puff</div>
+</div>
+</div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="vegburger.jpg">
+    <img src="vegburger.jpg" alt="Veg Burger" width="400" height="200"></a>
+  <div class="desc">Veg Burger</div>
+</div>
+</div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="ChickenBurger.jpg">
+    <img src="ChickenBurger.jpg" alt="Chicken Burger" width="400" height="200"></a>
+  <div class="desc">Chicken Burger</div>
+</div>
+</div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="vegpizza.jpg">
+    <img src="vegpizza.jpg" alt="Veg Pizza" width="400" height="200"></a>
+  <div class="desc">Veg Pizza</div>
+</div>
+</div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="chickenpizza.jpeg">
+    <img src="chickenpizza.jpeg" alt="Chicken Pizza" width="400" height="200"></a>
+  <div class="desc">Chicken Pizza</div>
+</div>
+</div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="chickensandwich.jpg">
+    <img src="chickensandwich.jpg" alt="Chicken Sandwich" width="400" height="200"></a>
+  <div class="desc">Chicken Sandwich</div>
+</div>
+</div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="ChickenRoll.jpg">
+    <img src="ChickenRoll.jpg" alt="Chicken Roll" width="400" height="200"></a>
+  <div class="desc">Chicken Roll</div>
+</div>
+</div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="Osmaniabiscuits.jpg">
+    <img src="Osmaniabiscuits.jpg" alt="Osmania Biscuits" width="400" height="200"></a>
+  <div class="desc">Osmania Biscuits</div>
+</div>
+</div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="saltbiscuits.jpg">
+    <img src="saltbiscuits.jpg" alt="Khare Biscuits" width="400" height="200"></a>
+  <div class="desc">Khare Biscuits</div>
+</div>
+</div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="finebiscuit.JPG">
+    <img src="finebiscuit.JPG" alt="fine Biscuit" width="400" height="200"></a>
+  <div class="desc">Fine Biscuit</div>
+</div>
+</div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="bun.jpg">
+    <img src="bun.jpg" alt="Bun" width="400" height="200"></a>
+  <div class="desc">Bun</div>
+</div>
+</div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="chips.jpg">
+    <img src="chips.jpg" alt="chips" width="400" height="200"></a>
+  <div class="desc">Chips</div>
+</div>
+</div>
+</div>
+
+
+<div style="background-color:blue">
+<h1 class="glow" style="color:White">Tiffins</h1>
+</div>
+
+<div class="row">
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="saag puri.jpg">
+    <img src="saag puri.jpg" alt="Saag Puri" width="300" height="200">
+  </a>
+  <div class="desc">Saag Puri</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="idli.jpg">
+    <img src="idli.jpg" alt="idli" width="300" height="200">
+  </a>
+  <div class="desc">idli</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="sambaridli.jpg">
+    <img src="sambaridli.jpg" alt="idli" width="300" height="200">
+  </a>
+  <div class="desc">Sambar Idli</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="vada.jpg">
+    <img src="vada.jpg" alt="vada" width="300" height="200">
+  </a>
+  <div class="desc">vada</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="sambarvada.jpg">
+    <img src="sambarvada.jpg" alt="Sambar Vada" width="300" height="200">
+  </a>
+  <div class="desc">Sambar Vada</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="plaindosa.jpg">
+    <img src="plaindosa.jpg" alt="Plain Dosa" width="300" height="200">
+  </a>
+  <div class="desc">Plain Dosa</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="masaladosa.jpg">
+    <img src="masaladosa.jpg" alt="Masala Dosa" width="300" height="200">
+  </a>
+  <div class="desc">Masala Dosa</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="oniondosa.jpg">
+    <img src="oniondosa.jpg" alt="Onion Dosa" width="300" height="200">
+  </a>
+  <div class="desc">Onion Dosa</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="butterdosa.jpg">
+    <img src="butterdosa.jpg" alt="Butter Dosa" width="300" height="200">
+  </a>
+  <div class="desc">Butter Dosa</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="upma.jpg">
+    <img src="upma.jpg" alt="Upma" width="300" height="200">
+  </a>
+  <div class="desc">Upma</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="mysorebonda.jpg">
+    <img src="mysorebonda.jpg" alt="mysorebonda" width="300" height="200">
+  </a>
+  <div class="desc">Mysore Bonda/Bhajiya</div>
+</div></div>
+
+</div>
+
+<div style="background-color:blue">
+<h1 class="glow" style="color:White">Lunch</h1>
+</div>
+
+<div class="row">
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="bagarrice.jpg">
+    <img src="bagarrice.jpg" alt="Bagar Rice" width="600" height="200">
+  </a>
+  <div class="desc">Bagar Rice/Zeera Rice</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="VEG-MEALS.jpg">
+    <img src="VEG-MEALS.jpg" alt="VEG-MEALS" width="600" height="200">
+  </a>
+  <div class="desc">VEG-MEALS</div>
+</div></div>
+
+</div>
+
+<div style="background-color:blue">
+<h1 class="glow" style="color:White">Hot Beverages</h1>
+</div>
+
+<div class="row">
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="tea.jpg">
+    <img src="tea.jpg" alt="Tea" width="300" height="200">
+  </a>
+  <div class="desc">Tea</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="lemontea.jpg">
+    <img src="lemontea.jpg" alt="Lemon Tea" width="300" height="200">
+  </a>
+  <div class="desc">Lemon Tea</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="greentea.jpg">
+    <img src="greentea.jpg" alt="Green Tea" width="300" height="200">
+  </a>
+  <div class="desc">Green Tea</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="coffee.jpg">
+    <img src="coffee.jpg" alt="Coffee" width="300" height="200">
+  </a>
+  <div class="desc">Coffee</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="milk.jpg">
+    <img src="milk.jpg" alt="Milk" width="300" height="200">
+  </a>
+  <div class="desc">Milk</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="hot-bournvita.jpg">
+    <img src="hot-bournvita.jpg" alt="hot-bournvita" width="300" height="200">
+  </a>
+  <div class="desc">Hot-Bournvita</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="horlicks.jpg">
+    <img src="horlicks.jpg" alt="Horlicks" width="300" height="200">
+  </a>
+  <div class="desc">Horlicks</div>
+</div></div>
+
+<div class="column">
+<div class="gallery">
+  <a target="_blank" href="boost.jpg">
+    <img src="boost.jpg" alt="boost" width="300" height="200">
+  </a>
+  <div class="desc">Boost</div>
+</div></div>
+
+</div>
+
+<div style="background-color:blue">
+<h1 class="glow" style="color:White">Cold Beverages</h1>
+</div>
+
+<div class="row1">
+
+<div class="column1">
+  
+  <a target="_blank" href="colddrinks.png">
+    <img src="colddrinks.png" alt="colddrinks" width="1200" height="500">
+  </a>
+  <div class="desc">All Cold Drinks Are Available</div>
+</div>
+</div>
+
+<hr>
+<div style="background-color:blue">
+<h1 class="glow" style="color:White;font-size:60px">Coming Soon</h1>
+</div>
+
+<hr>
+
+<div style="background-color:blue">
+<h1 class="glow" style="color:White;font-size:60px">Non-Veg Starters</h1>
+</div>
+
+<div class="row1">
+
+<div class="column1">
+<div class="gallery1">
+  <a target="_blank" href="chicken65.jpg">
+    <img src="chicken65.jpg" alt="Chicken65" width="500" height="300">
+  </a>
+  <div class="desc">Chicken65</div>
+</div></div>
+
+<div class="column1">
+<div class="gallery1">
+  <a target="_blank" href="chickenlolipop.jpg">
+    <img src="chickenlolipop.jpg" alt="Chicken Lolipop" width="500" height="300">
+  </a>
+  <div class="desc">Chicken Lolipop</div>
+</div></div>
+
+<div class="column1">
+<div class="gallery1">
+  <a target="_blank" href="chickentandoori.jpg">
+    <img src="chickentandoori.jpg" alt="Chicken Tandoori" width="500" height="300">
+  </a>
+  <div class="desc">Chicken Tandoori</div>
+</div></div>
+
+<div class="column1">
+<div class="gallery1">
+  <a target="_blank" href="chickentikka.jpg">
+    <img src="chickentikka.jpg" alt="Chickentikka" width="500" height="300">
+  </a>
+  <div class="desc">Chicken Tikka</div>
+</div></div>
+
+<div class="column1">
+<div class="gallery1">
+  <a target="_blank" href="mutton65.JPG">
+    <img src="mutton65.JPG" alt="mutton65" width="500" height="300">
+  </a>
+  <div class="desc">Mutton65</div>
+</div></div>
+
+<div class="column1">
+<div class="gallery1">
+  <a target="_blank" href="muttonkofta.jpg">
+    <img src="muttonkofta.jpg" alt="muttonkofta" width="500" height="300">
+  </a>
+  <div class="desc">Mutton Kofta</div>
+</div></div>
+
+<div class="column1">
+<div class="gallery1">
+  <a target="_blank" href="muttonkabab.JPG">
+    <img src="muttonkabab.JPG" alt="muttonkabab" width="500" height="300">
+  </a>
+  <div class="desc">Mutton Kabab</div>
+</div></div>
+
+<div class="column1">
+<div class="gallery1">
+  <a target="_blank" href="muttonmasala.jpg">
+    <img src="muttonmasala.jpg" alt="muttonmasala" width="500" height="300">
+  </a>
+  <div class="desc">Palak Mutton Masala</div>
+</div></div>
+
+</div>
+<hr>
+<div style="background-color:blue">
+<h1 class="glow" style="color:White;font-size:60px">Main Course</h1>
+</div>
+<hr>
+<div style="background-color:blue">
+<h1 class="glow" style="color:White;font-size:60px">Biryani's</h1>
+</div>
+
+<div class="row1">
+
+<div class="column1">
+<div class="gallery1">
+  <a target="_blank" href="chickenbiryani.jpg">
+    <img src="chickenbiryani.jpg" alt="Chickenbiryani" width="500" height="300">
+  </a>
+  <div class="desc">Chicken Biryani</div>
+</div></div>
+
+<div class="column1">
+<div class="gallery1">
+  <a target="_blank" href="muttonbiryani.jpg">
+    <img src="muttonbiryani.jpg" alt="muttonbiryani" width="500" height="300">
+  </a>
+  <div class="desc">Mutton Biryani</div>
+</div></div>
+
+</div>
+
+<div style="background-color:blue">
+<h1 class="glow" style="color:White;font-size:60px">Mandi's</h1>
+</div>
+
+<div class="row1">
+
+<div class="column1">
+<div class="gallery1">
+  <a target="_blank" href="chicken-mandi.jpg">
+    <img src="chicken-mandi.jpg" alt="Chickenmandi" width="500" height="300">
+  </a>
+  <div class="desc">Chicken Mandi</div>
+</div></div>
+
+<div class="column1">
+<div class="gallery1">
+  <a target="_blank" href="muttonmandi.jpg">
+    <img src="muttonmandi.jpg" alt="muttonmandi" width="500" height="300">
+  </a>
+  <div class="desc">Mutton Mandi</div>
+</div></div>
+
+</div>
+<hr>
+
+
+<hr>
+<footer>
+<h4><p>&copy; 2019  Anmy Developer's<br>
+    Contact no:-8309948081/8978533017<br>
+    <i class="fa fa-whatsapp" style="font-size:20px;color:green;text-align:right"></i>
+    <span>Whatsapp no:-8978533017</span></p></h4>
+</footer>
+
+
+</body>
+</html>
